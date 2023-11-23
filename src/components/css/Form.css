@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-container {
+    box-shadow: 10px 10px 20px #ccc;
+    padding: 10px;
+    margin: 2% 20% 0px 20%;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+form input {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid  #D9D9D9;
+}
+
+#formTitle {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 2px solid #ee6e73;
+    outline: none;
+}
+
+#submitButton {
+    border: none;
+    background: none;
+    font-size: large;
+    width: 220px;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+#submitButton:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#submitButton:focus {
+    border: 1px solid black;
+}
+
+#toggleButton {
+    border: none;
+    background: none;
+    font-size: large;
+    width: 220px;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+#toggleButton:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#toggleButton:focus {
+    border: 1px solid black;
+}

@@ -1,0 +1,75 @@
+.addblog {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 10px 10px 20px #ccc;
+    border-radius: 10px;
+    font-family: 'Roboto Mono',monospace;
+}
+
+table {
+    border: none;
+    width: 100%;
+}
+
+table caption {
+    user-select: none;
+}
+
+td {
+    padding: 10px 15px;
+}
+
+.addblog table td input,
+.addblog table td textarea {
+    width: 100%;
+    border: 2px solid  #D9D9D9;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.addblog table td input:focus,
+.addblog table td textarea:focus {
+    border: 2px solid #ee6e73;
+    outline: none;
+}
+
+.addblog table td textarea {
+    resize: none;
+    height: 100px;
+}
+
+.addblog table td label {
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.addblog table td button {
+    border: none;
+    background: none;
+    font-size: large;
+    width: 220px;
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    user-select: none;
+}
+
+.addblog table td button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.addblog table td button:focus {
+    border: 1px solid black;
+}
+
+.addblog table .center {
+    text-align: center;
+}
