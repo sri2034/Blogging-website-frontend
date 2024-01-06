@@ -17,7 +17,7 @@ const Profile = ({ setIsLoggedIn }) => {
     },[location]);
     const handleAccDelete = async() => {
         try {
-            const res = await axios.delete(`https://blogging-website-main-backend.onrender.com/api/user/deleteAccount`, {data: {email:user.email}});
+            const res = await axios.delete(`http://127.0.0.1:4000/api/user/deleteAccount`, {data: {email:user.email}});
             if(res.status === 200) {
                 localStorage.removeItem('userId');
                 setIsLoggedIn(false);

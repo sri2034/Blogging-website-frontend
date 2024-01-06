@@ -22,7 +22,7 @@ const AddBlog = () => {
   const sendRequest = async () => {
     const default_image_url = "https://media.istockphoto.com/id/1396814518/vector/image-coming-soon-no-photo-no-thumbnail-image-available-vector-illustration.webp?s=2048x2048&w=is&k=20&c=b9S9F5NT9TWeFZE8XGGdIu3FucUa2Nm9MAXIgkj-FnA=";
       const imageUrl = inputs.imageURL || default_image_url;
-      const res = await axios.post("https://blogging-website-main-backend.onrender.com/api/blog/add", {
+      const res = await axios.post("http://127.0.0.1:4000/api/blog/add", {
         title: inputs.title,
         description: inputs.description,
         image: imageUrl,
