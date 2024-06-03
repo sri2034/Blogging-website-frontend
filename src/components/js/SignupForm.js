@@ -24,7 +24,7 @@ const SignupForm = () => {
 
   const sendRequest = async () => {
     try {
-      const res = await axios.post('http://127.0.0.1:4000/api/user/signup', {
+      const res = await axios.post('https://blogging-website-main-backend.onrender.com/api/user/signup', {
         name: inputs.name,
         username: inputs.username,
         birthdate: inputs.birthdate,
@@ -64,7 +64,7 @@ const SignupForm = () => {
       await sendRequest();
     } else if (step === 'otpVerification') {
       try {
-        const res = await axios.post('http://127.0.0.1:4000/api/user/verify-otp', {
+        const res = await axios.post('https://blogging-website-main-backend.onrender.com/api/user/verify-otp', {
           email: inputs.email,
           otp: inputs.otp,
         });
