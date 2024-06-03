@@ -19,7 +19,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
   const sendRequest = async () => {
     try {
-      const res = await axios.post('http://127.0.0.1:4000/api/user/login', {
+      const res = await axios.post('https://blogging-website-main-backend.onrender.com/api/user/login', {
         email: inputs.email,
         password: inputs.password,
       });
