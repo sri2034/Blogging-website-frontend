@@ -31,7 +31,7 @@ const ChangePwd = () => {
         e.preventDefault();
         try {
             if(inputs.newpassword === inputs.cnewpassword){
-                await axios.post(`http://127.0.0.1:4000/api/user/ChangePwd`,{
+                await axios.post(`https://blogging-website-main-backend.onrender.com/api/user/ChangePwd`,{
                     email: user.email,
                     oldpassword: inputs.oldpassword,
                     newpassword: inputs.newpassword
