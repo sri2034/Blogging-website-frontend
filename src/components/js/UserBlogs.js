@@ -6,7 +6,7 @@ const UserBlogs = () => {
   const [user, setUser] = useState([]);
   const id = localStorage.getItem("userId");
   const sendRequest = async() => {
-    const res = await axios.get(`http://127.0.0.1:4000/api/blog/user/${id}`).catch(err=>console.log(err));
+    const res = await axios.get(`https://blogging-website-main-backend.onrender.com/api/blog/user/${id}`).catch(err=>console.log(err));
     const data = await res.data;
     return data;
   }
