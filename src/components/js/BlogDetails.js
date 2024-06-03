@@ -19,7 +19,7 @@ const BlogDetails = () => {
   const [blog, setBlog] = useState();
   const id = useParams().id;
   const fetchDetails = async() => {
-    const res = await axios.get(`http://127.0.0.1:4000/api/blog/${id}`).catch(err => console.log(err));
+    const res = await axios.get(`https://blogging-website-main-backend.onrender.com/api/blog/${id}`).catch(err => console.log(err));
     const data = await res.data;
     return data;
   }
@@ -32,7 +32,7 @@ const BlogDetails = () => {
   const sendRequest = async () => {
     const default_image_url = "https://media.istockphoto.com/id/1396814518/vector/image-coming-soon-no-photo-no-thumbnail-image-available-vector-illustration.webp?s=2048x2048&w=is&k=20&c=b9S9F5NT9TWeFZE8XGGdIu3FucUa2Nm9MAXIgkj-FnA=";
     const imageUrl = inputs.imageURL || default_image_url;
-    const res = axios.put(`http://127.0.0.1:4000/api/blog/update/${id}`,{
+    const res = axios.put(`https://blogging-website-main-backend.onrender.com/api/blog/update/${id}`,{
       title: inputs.title,
       description: inputs.description,
       image: imageUrl
